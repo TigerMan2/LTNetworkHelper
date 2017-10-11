@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WYNetworkHelper.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+//    [WYNetworkHelper GET:@"https://api.map.baidu.com/location/ip" parameters:nil success:^(id responseObject) {
+//        NSLog(@"获取的数据---%@",responseObject);
+//        
+//    } failure:^(NSError *error) {
+//        
+//    }];
+    [WYNetworkHelper GET:@"https://api.map.baidu.com/location/ip" parameters:nil responseCache:^(id responseCache) {
+        NSLog(@"缓存数据---%@",responseCache);
+    } success:^(id responseObject) {
+        NSLog(@"成功数据---%@",responseObject);
+    } failure:^(NSError *error) {
+        
+    }];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
