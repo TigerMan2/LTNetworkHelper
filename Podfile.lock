@@ -21,7 +21,7 @@ DEPENDENCIES:
   - YYCache (~> 1.0.4)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - YYCache
 
@@ -29,6 +29,6 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: d0d6f5aeb0962a52e09a1d94ca0b512491627d83
+PODFILE CHECKSUM: 25bd82d9683f6f6d99e64687582b350d17be9601
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
